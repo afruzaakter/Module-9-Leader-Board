@@ -1,0 +1,216 @@
+/* googl font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles or utilities */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+    margin: 0;
+    padding: 0;  
+    
+  
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   position: relative;
+   overflow: hidden;
+
+ 
+}
+.container{
+    width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+    /* margin: 0 auto;  */
+    margin-top: 21px; 
+    border-radius: 5px;
+}
+/* header style  */
+header{
+    background-color: #562EFF;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 0;
+    /* position: fixed; */
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 870px;
+    margin: 0 auto;
+    
+}
+.logo img{
+    width: 40px;
+    height: 44px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo span{
+    color: #ffffff;
+    font-size: 24px;
+    width: 500;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px;
+}
+
+/* section 1 top player part start */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562eff;
+    font-size: 24px;
+    margin-top: 3px; 
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-row-gap: 30px;
+
+   
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.player img{
+ width: 56px;
+ height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+   
+}
+/* section 1 top player part end */
+
+/* section 2 top Blogs part start  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117;
+}
+.blog{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-auhor{
+    color: #9f9f9f;
+    font-size: 16px;
+}
+.blog-auhor a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562eff;
+
+}
+
+/* section 2 top Blogs part end  */
+/* section 3 Latest course part start  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+ .course .course-banner img{
+     width: 224px;
+     height: 104px;
+ }
+ .course-info{
+     display: flex;
+     align-items: center;
+    
+ }
+ .fa-star{
+     font-size: 12px;
+ }
+ .fa-star.filled{
+     color: #ffc014;
+ }
+ .fa-star.empty{
+    color: #858072;
+}
+span{
+    margin-left: 8px;
+    font-size: 12px;
+}
+.course-duration{
+    margin-left: 8px;
+    font-size: 12px;
+    color: red;
+}
+/* section 3 Latest course part end  */
+
+/* Media queries */
+/* Mobile Devices */
+/* sorbocho 688 ar niche hole kaj korbe na */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{ 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    } 
+    .section-title{
+        text-align: center;
+    }
+}
+
+/* tablet Device */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses, blogs{ 
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .section-title{
+        text-align: center;
+    }
+}
